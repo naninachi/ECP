@@ -1,7 +1,3 @@
-Issue Device
-
-
-
 import React, { Component } from 'react';
 
 import {Modal,Button,ButtonToolbar,input,Form} from 'react-bootstrap';
