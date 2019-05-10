@@ -1,10 +1,3 @@
-Login
-
-
-
-
-App.js(Login)
-
 import React, { Component } from 'react';
 //import logo from './logo.svg';
 //import './App.css';
@@ -19,7 +12,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-     <h1>Welcome peeps</h1>
+     <h1>ROSE</h1>
      <Form>
   <Form.Group controlId="formBasicEmail">
     <Form.Label>Email address</Form.Label>
@@ -37,7 +30,7 @@ class App extends Component {
     <Form.Check type="checkbox" label="Check me out" />
   </Form.Group>
   <button id="bt" onClick={this.onClick}>Click</button>
-  <a href="./Login">Sub</a>
+  <a href="#">Sub</a>
 </Form>
         </header>
       </div>
