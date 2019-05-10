@@ -1,0 +1,71 @@
+Issue Device
+
+
+
+import React, { Component } from 'react';
+
+import {Modal,Button,ButtonToolbar,input,Form} from 'react-bootstrap';
+
+
+class App extends React.Component {
+  constructor(props, context) {
+    super(props, context);
+
+    this.handleShow = this.handleShow.bind(this);
+    this.handleClose = this.handleClose.bind(this);
+
+    this.state = {
+      show: false,
+    };
+  }
+
+  handleClose() {
+    this.setState({ show: false });
+  }
+
+  handleShow() {
+    this.setState({ show: true });
+  }
+
+  render() {
+    return (
+      <>
+        <Button variant="primary" onClick={this.handleShow}>
+          Launch demo modal
+        </Button>
+
+        <Modal show={this.state.show} onHide={this.handleClose}>
+          <Modal.Header closeButton>
+            <Modal.Title>Issue New Device</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+          <p>Name: <input className="e-input" type="text" placeholder="Enter Name" /></p>
+          <p>EmailId: <input className="e-input" type="text" placeholder="Enter Emailid" /></p>
+          <p>Aadhar: <input className="e-input" type="text" placeholder="Enter Aadhar" /></p>
+          <p>Constituency: <input className="e-input" type="text" placeholder="enter Constituency" /></p>
+          <div className="form-group">
+          <div className="checkbox">
+            <label><input type="checkbox" value=""   />Male</label>
+            <br />
+            <label><input type="checkbox" value=""  />Female</label>
+          </div>
+        </div>
+        <Button variant="primary">Issue Device</Button>
+
+
+          </Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={this.handleClose}>
+              Close
+            </Button>
+            <Button variant="primary" onClick={this.handleClose}>
+              Save Changes
+            </Button>
+          </Modal.Footer>
+        </Modal>
+      </>
+    );
+  }
+}
+
+export default App;
