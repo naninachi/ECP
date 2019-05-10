@@ -1,46 +1,39 @@
-Dash
-
 import React, { Component } from 'react';
+//import logo from './logo.svg';
+import './App.css';
 import {Navbar,NavDropdown,Nav} from 'react-bootstrap';
 
-//import logo from './logo.svg';
-//import './App.css';
-
-
-
-class Dash extends Component {
-
+class App extends Component {
   render() {
     return (
-      <div className="Login">
-        <header className="Login-header">
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-  <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+      <div className="App">
+        
+            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+  <Navbar.Brand href="#home">RVS</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="mr-auto">
-      <Nav.Link href="#features">Features</Nav.Link>
-      <Nav.Link href="#pricing">Pricing</Nav.Link>
-      <NavDropdown title="dropdown" id="collasible-nav-dropdown">
-        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+      <Nav.Link href="./Sucess">Issue New Device</Nav.Link>
+      <Nav.Link href="#pricing">Create New Election</Nav.Link>
+      <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+        <NavDropdown.Item href="#action/3.1">Election 1 Result</NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.2">Election 2 Result</NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.3">Election 3 Result</NavDropdown.Item>
         <NavDropdown.Divider />
-        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+       
       </NavDropdown>
     </Nav>
     <Nav>
-      <Nav.Link href="#deets">More deets</Nav.Link>
+      
       <Nav.Link eventKey={2} href="#memes">
-        Dank memes
+        Logout
       </Nav.Link>
     </Nav>
   </Navbar.Collapse>
-</Navbar>;
-      </header>
+</Navbar>        
       </div>
     );
   }
 }
 
-export default Dash;
+export default App;
