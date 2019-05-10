@@ -1,7 +1,3 @@
-
-Create New Election
-
-
 import React, { Component } from 'react';
 //import logo from './logo.svg';
 import {Modal,Button,ButtonToolbar,input,NavDropdown,Form} from 'react-bootstrap';
